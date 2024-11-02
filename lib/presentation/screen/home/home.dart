@@ -6,10 +6,12 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title: Text("Inicio"),
-        actionsIconTheme: IconThemeData(color: Color.fromARGB(567456234, 2356, 3456, 0)),
-      ) ,
+      appBar: AppBar(
+        title: Text('Widget'),centerTitle: false,
+      ),
+    body: Center(
+
+    ),
     );
   }
 }

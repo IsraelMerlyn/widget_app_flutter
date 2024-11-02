@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widget_app/pages/home.dart';
+import 'package:widget_app/presentation/screen/home/home.dart';
+import 'package:widget_app/theme/AppTheme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
+      theme: Apptheme(
+       selectedColor: 7).getTheme(),
       home: MyWidget(),
     );
   }
